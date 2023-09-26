@@ -54,4 +54,33 @@ let isLoggedIn = true;
 const is = Symbol('123')
 // const bigNumber = 1235434355454545n
 
-console.log(typeof "shankar");    // chack datatype
+// console.log(typeof "shankar");    // chack datatype
+
+
+// anather examples of reference:
+
+// stack (primitive data types) Heap (non-promitive datatype)
+
+//================stack memory===========get copy of object==
+
+let myYutubename = "shankar gavit "
+
+let anotherName = myYutubename;
+
+anotherName = "gavit shankar"
+
+console.log(myYutubename);
+console.log(anotherName);
+
+//==========heap memory=============get reference 
+let userOne = {
+    email: "jmsgavit@gmail.com",
+    upi: "shinkar@ypl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "jone@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
